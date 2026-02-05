@@ -13,7 +13,7 @@ function setOperator(op) {
     calculate();
   }
   operator = op;
-  document.getElementById('operatorBox').value = operator; // update operator box
+  document.getElementById('operatorBox').value = operator; 
   previousInput = currentInput;
   currentInput = '';
 }
@@ -41,7 +41,7 @@ function calculate() {
       return;
   }
   document.getElementById('display').value = result;
-  document.getElementById('operatorBox').value = ''; // clear operator box after calculation
+  document.getElementById('operatorBox').value = ''; 
   currentInput = result.toString();
   previousInput = '';
   operator = '';
@@ -52,5 +52,5 @@ function clearDisplay() {
   previousInput = '';
   operator = '';
   document.getElementById('display').value = '';
-  document.getElementById('operatorBox').value = ''; // clear operator box
+  document.getElementById('operatorBox').value = ''; 
 }
